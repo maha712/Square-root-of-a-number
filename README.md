@@ -21,10 +21,19 @@ Program to find the square root for the given number(newton's method) using func
 Developed by: 
 RegisterNumber:  
 */
+def newton_method(number,number_iters=100):
+    a=float(number)
+    for i in range(number_iters):
+        number=0.5*(number + a/number)
+    return number
+a=int(input())
+print("Square root of the number:",newton_method(a))
+
 ```
 
 ## Output:
 ![gcd of two number](gcd.png)
+![Screenshot (114)](https://github.com/maha712/Square-root-of-a-number/assets/121156360/17ee8702-af1f-497c-b1c1-b51b85b7e472)
 
 
 ## Result:
